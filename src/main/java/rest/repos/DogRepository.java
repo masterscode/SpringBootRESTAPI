@@ -10,4 +10,5 @@ import java.util.List;
 public interface DogRepository extends JpaRepository<Dog, Long> {
     Dog findDogById(Long id);
     List<Dog> findDogsByBreed(String breed);
+    //List<Dog> findAllBreed();//Correction for the line above that did not work
 }
